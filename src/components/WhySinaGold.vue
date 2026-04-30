@@ -80,7 +80,7 @@ import ScrollTrigger from 'gsap/ScrollTrigger';
 gsap.registerPlugin(ScrollTrigger);
 
 const stats = [
-  { value: '+500', label: 'عميل سعيد' },
+  { value: '+50', label: 'عميل سعيد' },
   { value: '0.8%', label: 'أقصى حموضة' },
   { value: '100%', label: 'طبيعي نقي' },
 ];
