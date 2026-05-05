@@ -10,10 +10,10 @@
         <!-- Logo -->
         <a href="#hero" @click.prevent="scrollTo('hero')" class="flex items-center gap-3 group flex-shrink-0">
           <div class="w-10 h-10 rounded-full bg-gradient-to-br from-[#C9A84C] to-[#a88935] flex items-center justify-center shadow-[0_0_15px_rgba(201,168,76,0.4)] group-hover:shadow-[0_0_25px_rgba(201,168,76,0.6)] transition-all duration-300">
-            <span class="text-white font-black text-base leading-none">سG</span>
+            <span class="text-white font-black text-base leading-none">GS</span>
           </div>
           <div class="hidden sm:block">
-            <span class="font-black text-xl text-[#eef5e8] group-hover:text-[#C9A84C] transition-colors leading-tight tracking-tight">سينا جولد</span>
+            <span class="font-black text-xl text-[#eef5e8] group-hover:text-[#C9A84C] transition-colors leading-tight tracking-tight">جولد سيناء</span>
             <p class="text-[10px] font-semibold text-[#5a9e32] leading-tight">زيت زيتون سيناء</p>
           </div>
         </a>

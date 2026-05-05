@@ -1,11 +1,16 @@
 <template>
-  <section id="why-us" class="section-pad relative overflow-hidden" style="background: linear-gradient(180deg, #111a0d 0%, #1a2614 100%);">
+  <section id="why-us" class="section-pad relative overflow-hidden"
+    style="background: linear-gradient(180deg, #111a0d 0%, #1a2614 100%);">
     <!-- Top separator -->
     <div class="section-glow-sep"></div>
 
     <!-- BG glow blobs -->
-    <div style="position:absolute;top:-80px;right:-80px;width:400px;height:400px;border-radius:50%;background:radial-gradient(circle,rgba(201,168,76,0.06) 0%,transparent 70%);pointer-events:none;"></div>
-    <div style="position:absolute;bottom:-80px;left:-80px;width:350px;height:350px;border-radius:50%;background:radial-gradient(circle,rgba(45,80,22,0.12) 0%,transparent 70%);pointer-events:none;"></div>
+    <div
+      style="position:absolute;top:-80px;right:-80px;width:400px;height:400px;border-radius:50%;background:radial-gradient(circle,rgba(201,168,76,0.06) 0%,transparent 70%);pointer-events:none;">
+    </div>
+    <div
+      style="position:absolute;bottom:-80px;left:-80px;width:350px;height:350px;border-radius:50%;background:radial-gradient(circle,rgba(45,80,22,0.12) 0%,transparent 70%);pointer-events:none;">
+    </div>
 
     <div class="max-w-6xl mx-auto px-4 sm:px-6 relative z-10">
       <div class="flex flex-col lg:flex-row items-center gap-12 xl:gap-20">
@@ -13,14 +18,24 @@
         <!-- Image -->
         <div class="w-full lg:w-1/2 why-img gsap-slide-right relative">
           <!-- Frame decoration -->
-          <div style="position:absolute;inset:0;border:1px solid rgba(201,168,76,0.25);border-radius:1.5rem;transform:translate(10px,10px);z-index:-1;"></div>
-          <div style="position:absolute;inset:0;background:linear-gradient(135deg,rgba(45,80,22,0.15),rgba(201,168,76,0.08));border-radius:1.5rem;transform:translate(5px,5px);z-index:-1;filter:blur(6px);"></div>
+          <div
+            style="position:absolute;inset:0;border:1px solid rgba(201,168,76,0.25);border-radius:1.5rem;transform:translate(10px,10px);z-index:-1;">
+          </div>
+          <div
+            style="position:absolute;inset:0;background:linear-gradient(135deg,rgba(45,80,22,0.15),rgba(201,168,76,0.08));border-radius:1.5rem;transform:translate(5px,5px);z-index:-1;filter:blur(6px);">
+          </div>
 
-          <div class="relative overflow-hidden" style="border-radius:1.5rem;box-shadow:0 25px 80px rgba(0,0,0,0.7),0 0 0 1px rgba(201,168,76,0.15);">
-            <img src="/assets_v1/poster2.png" alt="مزارع زيتون سيناء"
-              class="w-full object-cover" style="height:480px;" />
+          <div class="relative overflow-hidden h-[480px]"
+            style="border-radius:1.5rem;box-shadow:0 25px 80px rgba(0,0,0,0.7),0 0 0 1px rgba(201,168,76,0.15);">
+
+            <img src="/assets_v1/poster2.jpeg" alt="مزارع زيتون سيناء"
+              class="w-full h-full object-cover object-center block" />
+
             <!-- Image overlay tint -->
-            <div style="position:absolute;inset:0;background:linear-gradient(to top,rgba(13,21,9,0.55) 0%,transparent 50%);"></div>
+            <div
+              style="position:absolute;inset:0;background:linear-gradient(to top,rgba(13,21,9,0.55) 0%,transparent 50%);">
+            </div>
+
             <div class="absolute top-4 right-4 badge-gold text-xs">🌿 أصالة سيناء</div>
           </div>
 
@@ -28,7 +43,9 @@
           <div class="mt-6 grid grid-cols-3 gap-4">
             <div v-for="s in stats" :key="s.label" class="dark-card p-4 text-center">
               <div class="text-2xl font-black text-gradient-gold">{{ s.value }}</div>
-              <div style="font-size:0.72rem;color:#567048;font-weight:600;margin-top:0.25rem;line-height:1.3;">{{ s.label }}</div>
+              <div style="font-size:0.72rem;color:#567048;font-weight:600;margin-top:0.25rem;line-height:1.3;">
+                {{ s.label }}
+              </div>
             </div>
           </div>
         </div>
@@ -42,25 +59,30 @@
           </h2>
 
           <div class="space-y-4" style="color:#8aab78;font-size:1rem;line-height:1.8;font-weight:500;">
-            <p>في مزارع سيناء الخضراء البكر، حيث الشمس الذهبية والتربة الطيبة، تنمو أشجار الزيتون بعناية فائقة. نحن لا نؤمن بالأسرع، بل بالأصح.</p>
-            <p>كل زجاجة من "سينا جولد" هي نتاج حصاد يدوي بأيدي مزارعينا، وعصرة أولى على البارد خلال 24 ساعة من القطاف، للحفاظ على كامل مغذياتها وطعمها الأصيل.</p>
+            <p>في مزارع سيناء الخضراء البكر، حيث الشمس الذهبية والتربة الطيبة، تنمو أشجار الزيتون بعناية فائقة. نحن لا
+              نؤمن بالأسرع، بل بالأصح.</p>
+            <p>كل زجاجة من "سينا جولد" هي نتاج حصاد يدوي بأيدي مزارعينا، وعصرة أولى على البارد خلال 24 ساعة من القطاف،
+              للحفاظ على كامل مغذياتها وطعمها الأصيل.</p>
           </div>
 
           <!-- Feature rows -->
           <div class="mt-8 space-y-3">
             <div v-for="(f, i) in features" :key="i"
               class="feature-row glass-card flex items-start gap-4 p-4 group cursor-default">
-              <div class="w-10 h-10 rounded-xl flex items-center justify-center text-xl flex-shrink-0 group-hover:scale-110 transition-transform"
+              <div
+                class="w-10 h-10 rounded-xl flex items-center justify-center text-xl flex-shrink-0 group-hover:scale-110 transition-transform"
                 style="background:rgba(74,125,37,0.1);border:1px solid rgba(74,125,37,0.2);">{{ f.icon }}</div>
               <div>
-                <h4 style="font-weight:700;color:#eef5e8;margin-bottom:2px;" class="group-hover:text-[#C9A84C] transition-colors">{{ f.title }}</h4>
+                <h4 style="font-weight:700;color:#eef5e8;margin-bottom:2px;"
+                  class="group-hover:text-[#C9A84C] transition-colors">{{ f.title }}</h4>
                 <p style="font-size:0.82rem;color:#567048;">{{ f.desc }}</p>
               </div>
             </div>
           </div>
 
           <!-- Warning -->
-          <div class="mt-6 p-4 rounded-2xl" style="background:rgba(201,168,76,0.07);border:1px solid rgba(201,168,76,0.18);">
+          <div class="mt-6 p-4 rounded-2xl"
+            style="background:rgba(201,168,76,0.07);border:1px solid rgba(201,168,76,0.18);">
             <p style="color:#C9A84C;font-weight:700;font-size:0.88rem;display:flex;gap:0.6rem;align-items:flex-start;">
               <span style="font-size:1.2rem;flex-shrink:0;">⚠️</span>
               لا تشتري زيت مجهول المصدر. سينا جولد مضمون ومصدره من مزارعنا مباشرةً في سيناء.
@@ -85,18 +107,18 @@ const stats = [
   { value: '100%', label: 'طبيعي نقي' },
 ];
 const features = [
-  { icon:'❄️', title:'العصرة الأولى على البارد', desc:'تحافظ على كل الفيتامينات والبوليفينولات النشطة' },
-  { icon:'🤲', title:'حصاد يدوي 100%',           desc:'لا آلات — كل حبة زيتون بأيدي مزارعينا بعناية' },
-  { icon:'📍', title:'مصدر موثق من سيناء',        desc:'مزارعنا في شبه جزيرة سيناء، مناخ مثالي للزيتون' },
-  { icon:'🏆', title:'جودة معتمدة أقل من 0.8%',   desc:'نسبة الحموضة معيار الجودة الأول عالمياً' },
+  { icon: '❄️', title: 'العصرة الأولى على البارد', desc: 'تحافظ على كل الفيتامينات والبوليفينولات النشطة' },
+  { icon: '🤲', title: 'حصاد يدوي 100%', desc: 'لا آلات — كل حبة زيتون بأيدي مزارعينا بعناية' },
+  { icon: '📍', title: 'مصدر موثق من سيناء', desc: 'مزارعنا في شبه جزيرة سيناء، مناخ مثالي للزيتون' },
+  { icon: '🏆', title: 'جودة معتمدة أقل من 0.8%', desc: 'نسبة الحموضة معيار الجودة الأول عالمياً' },
 ];
 
 onMounted(() => {
-  gsap.to('.why-img',  { scrollTrigger: { trigger:'.why-img',  start:'top 80%' }, x:0, opacity:1, duration:0.9, ease:'power3.out' });
-  gsap.to('.why-text', { scrollTrigger: { trigger:'.why-text', start:'top 80%' }, x:0, opacity:1, duration:0.9, ease:'power3.out', delay:0.15 });
+  gsap.to('.why-img', { scrollTrigger: { trigger: '.why-img', start: 'top 80%' }, x: 0, opacity: 1, duration: 0.9, ease: 'power3.out' });
+  gsap.to('.why-text', { scrollTrigger: { trigger: '.why-text', start: 'top 80%' }, x: 0, opacity: 1, duration: 0.9, ease: 'power3.out', delay: 0.15 });
   gsap.to('.feature-row', {
-    scrollTrigger: { trigger:'.feature-row', start:'top 85%' },
-    y:0, opacity:1, duration:0.5, stagger:0.1, ease:'power2.out'
+    scrollTrigger: { trigger: '.feature-row', start: 'top 85%' },
+    y: 0, opacity: 1, duration: 0.5, stagger: 0.1, ease: 'power2.out'
   });
 });
 </script>
