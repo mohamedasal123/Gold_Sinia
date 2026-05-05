@@ -10,7 +10,7 @@
   loop
   playsinline
   preload="auto"
-
+  poster="/assets_v1/poster1.png"
 >
   <source src="/assets_v1/download.mp4" type="video/mp4" />
 </video>
