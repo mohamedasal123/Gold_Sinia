@@ -2,15 +2,18 @@
   <section id="hero" class="relative w-full h-screen min-h-[700px] flex items-center justify-center overflow-hidden">
 
     <!-- Video Background -->
-    <video
-      ref="videoEl"
-      class="absolute inset-0 w-full h-full object-cover will-change-transform"
-      autoplay muted loop playsinline
-      poster="/assets_v1/poster1.png"
-      preload="auto"
-    >
-      <source src="/assets_v1/download.mp4" type="video/mp4" />
-    </video>
+<video
+  ref="videoEl"
+  class="absolute inset-0 w-full h-full object-cover will-change-transform"
+  autoplay
+  muted
+  loop
+  playsinline
+  preload="auto"
+
+>
+  <source src="/assets_v1/download.mp4" type="video/mp4" />
+</video>
 
     <!-- Multi-layer overlay for depth -->
     <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/60 to-black/50 z-10"></div>
