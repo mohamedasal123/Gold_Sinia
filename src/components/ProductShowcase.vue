@@ -168,14 +168,14 @@
             <div class="mb-5 p-4 rounded-xl" style="background:rgba(13,21,9,0.5);border:1px solid rgba(74,125,37,0.15);">
               <div style="font-size:0.7rem;color:#567048;font-weight:600;margin-bottom:4px;letter-spacing:0.05em;">السعر بعد خصم اليوم</div>
               <div style="display:flex;align-items:flex-end;gap:8px;flex-wrap:wrap;">
-                <span style="font-size:2.4rem;font-weight:900;color:#C9A84C;line-height:1;">272</span>
+                <span style="font-size:2.4rem;font-weight:900;color:#C9A84C;line-height:1;">300</span>
                 <div style="padding-bottom:5px;">
                   <div style="font-size:0.95rem;color:#8aab78;font-weight:600;line-height:1;">جنيه</div>
                   <div style="font-size:0.78rem;text-decoration:line-through;color:#567048;line-height:1.4;">320</div>
                 </div>
               </div>
               <div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:10px;">
-                <span style="background:rgba(201,168,76,0.08);border:1px solid rgba(201,168,76,0.2);color:#C9A84C;font-size:0.72rem;font-weight:800;padding:0.2rem 0.65rem;border-radius:9999px;">💰 وفرت 48 جنيه</span>
+                <span style="background:rgba(201,168,76,0.08);border:1px solid rgba(201,168,76,0.2);color:#C9A84C;font-size:0.72rem;font-weight:800;padding:0.2rem 0.65rem;border-radius:9999px;">💰 وفرت 20 جنيه</span>
                 <span style="background:rgba(224,85,53,0.1);border:1px solid rgba(224,85,53,0.25);color:#ff9977;font-size:0.72rem;font-weight:700;padding:0.2rem 0.65rem;border-radius:9999px;">⚡ اليوم فقط</span>
               </div>
             </div>
@@ -241,14 +241,14 @@
             <div class="mb-5 p-4 rounded-xl" style="background:rgba(13,21,9,0.6);border:1px solid rgba(201,168,76,0.2);">
               <div style="font-size:0.7rem;color:#C9A84C;opacity:0.75;font-weight:600;margin-bottom:4px;letter-spacing:0.05em;">السعر بعد خصم اليوم</div>
               <div style="display:flex;align-items:flex-end;gap:10px;flex-wrap:wrap;">
-                <span style="font-size:2.8rem;font-weight:900;line-height:1;background:linear-gradient(135deg,#C9A84C,#e0c06a);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">510</span>
+                <span style="font-size:2.8rem;font-weight:900;line-height:1;background:linear-gradient(135deg,#C9A84C,#e0c06a);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">580</span>
                 <div style="padding-bottom:6px;">
                   <div style="font-size:1rem;color:#a8c898;font-weight:600;line-height:1;">جنيه</div>
                   <div style="font-size:0.8rem;text-decoration:line-through;color:#567048;line-height:1.4;">640</div>
                 </div>
               </div>
               <div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:10px;">
-                <span style="background:rgba(201,168,76,0.12);border:1px solid rgba(201,168,76,0.3);color:#C9A84C;font-size:0.72rem;font-weight:800;padding:0.2rem 0.65rem;border-radius:9999px;">💰 وفرت 130 جنيه</span>
+                <span style="background:rgba(201,168,76,0.12);border:1px solid rgba(201,168,76,0.3);color:#C9A84C;font-size:0.72rem;font-weight:800;padding:0.2rem 0.65rem;border-radius:9999px;">💰 وفرت 60 جنيه</span>
                 <span style="background:rgba(224,85,53,0.1);border:1px solid rgba(224,85,53,0.25);color:#ff9977;font-size:0.72rem;font-weight:700;padding:0.2rem 0.65rem;border-radius:9999px;">⚡ اليوم فقط</span>
               </div>
             </div>
@@ -314,20 +314,20 @@
             <div class="mb-5 p-4 rounded-xl" style="background:rgba(13,21,9,0.5);border:1px solid rgba(201,168,76,0.12);">
               <div style="font-size:0.7rem;color:#567048;font-weight:600;margin-bottom:4px;letter-spacing:0.05em;">السعر بعد خصم اليوم</div>
               <div style="display:flex;align-items:flex-end;gap:10px;flex-wrap:wrap;">
-                <span style="font-size:2.4rem;font-weight:900;color:#C9A84C;line-height:1;">1530</span>
+                <span style="font-size:2.4rem;font-weight:900;color:#C9A84C;line-height:1;">1700</span>
                 <div style="padding-bottom:5px;">
                   <div style="font-size:0.95rem;color:#8aab78;font-weight:600;line-height:1;">جنيه</div>
                   <div style="font-size:0.78rem;text-decoration:line-through;color:#567048;line-height:1.4;">1920</div>
                 </div>
               </div>
               <div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:10px;">
-                <span style="background:rgba(201,168,76,0.08);border:1px solid rgba(201,168,76,0.2);color:#C9A84C;font-size:0.72rem;font-weight:800;padding:0.2rem 0.65rem;border-radius:9999px;">💰 وفرت 390 جنيه</span>
+                <span style="background:rgba(201,168,76,0.08);border:1px solid rgba(201,168,76,0.2);color:#C9A84C;font-size:0.72rem;font-weight:800;padding:0.2rem 0.65rem;border-radius:9999px;">💰 وفرت 120 جنيه</span>
                 <span style="background:rgba(224,85,53,0.1);border:1px solid rgba(224,85,53,0.25);color:#ff9977;font-size:0.72rem;font-weight:700;padding:0.2rem 0.65rem;border-radius:9999px;">⚡ اليوم فقط</span>
               </div>
             </div>
 
             <!-- CTA -->
-            <a href="#order" @click.prevent="order('3L','1530')"
+            <a href="#order" @click.prevent="order('3L','1700')"
               class="cta-secondary block text-center py-3.5 rounded-xl font-bold"
               style="font-size:0.95rem;">
               اطلب الطقم الآن →
@@ -404,9 +404,9 @@ const features = [
   // 0.5L
   ['زيت بكر ممتاز من مزارع سيناء', 'معصور بكرة على البارد', 'حموضة أقل من 0.8%', 'مثالي للتجربة والتذوق'],
   // 1L
-  ['زيت بكر ممتاز من مزارع سيناء', 'معصور بكرة على البارد', 'حموضة أقل من 0.8%', 'يكفي العيلة شهر كامل', 'توفير 130 جنيه عن السعر العادي'],
+  ['زيت بكر ممتاز من مزارع سيناء', 'معصور بكرة على البارد', 'حموضة أقل من 0.8%', 'يكفي العيلة شهر كامل', 'توفير 60 جنيه عن السعر العادي'],
   // 3L
-  ['زيت بكر ممتاز من مزارع سيناء', 'معصور بكرة على البارد', 'حموضة أقل من 0.8%', 'توفير 390 جنيه من السعر الأصلي', 'مثالي للهدايا والعيلة الكبيرة'],
+  ['زيت بكر ممتاز من مزارع سيناء', 'معصور بكرة على البارد', 'حموضة أقل من 0.8%', 'توفير 220 جنيه من السعر الأصلي', 'مثالي للهدايا والعيلة الكبيرة'],
 ];
 
 const valueProps = [
