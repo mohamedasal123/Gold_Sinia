@@ -1,45 +1,46 @@
 <template>
+  <!-- Hero keeps the video/cinematic look — overlays adjusted for refined whites -->
   <section id="hero" class="relative w-full h-screen min-h-[700px] flex items-center justify-center overflow-hidden">
 
     <!-- Video Background -->
-<video
-  ref="videoEl"
-  class="absolute inset-0 w-full h-full object-cover will-change-transform"
-  autoplay
-  muted
-  loop
-  playsinline
-  preload="auto"
-  poster="/assets_v1/poster1.png"
->
-  <source src="/assets_v1/download.mp4" type="video/mp4" />
-</video>
+    <video
+      ref="videoEl"
+      class="absolute inset-0 w-full h-full object-cover will-change-transform"
+      autoplay
+      muted
+      loop
+      playsinline
+      preload="auto"
+      poster="/assets_v1/poster1.png"
+    >
+      <source src="/assets_v1/download.mp4" type="video/mp4" />
+    </video>
 
-    <!-- Multi-layer overlay for depth -->
-    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/60 to-black/50 z-10"></div>
-    <div class="absolute inset-0 bg-gradient-to-r from-black/60 via-transparent to-black/10 z-10"></div>
+    <!-- Multi-layer overlay — lighter & more refined -->
+    <div class="absolute inset-0 bg-gradient-to-t from-black/75 via-black/50 to-black/35 z-10"></div>
+    <div class="absolute inset-0 bg-gradient-to-r from-black/50 via-transparent to-black/10 z-10"></div>
     <!-- Gold accent at bottom -->
-    <div class="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-[#C9A84C] to-transparent z-20"></div>
+    <div class="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[#C9A84C]/60 to-transparent z-20"></div>
 
     <!-- Hero Content -->
     <div class="relative z-20 w-full max-w-5xl mx-auto px-4 sm:px-6 text-center flex flex-col items-center">
 
       <!-- Pre-headline badge -->
       <div ref="badgeEl" class="gsap-fade-up mb-6">
-        <span class="inline-flex items-center gap-2 bg-white/10 backdrop-blur-md border border-[#C9A84C]/50 text-[#C9A84C] font-bold px-5 py-2 rounded-full text-sm tracking-wider uppercase shadow-lg">
+        <span class="inline-flex items-center gap-2 bg-white/15 backdrop-blur-md border border-white/30 text-white font-bold px-5 py-2 rounded-full text-sm tracking-wider uppercase shadow-lg">
           🌿 من مزارع سيناء الأصيلة
         </span>
       </div>
 
       <!-- Main Headline -->
       <h1 ref="titleEl" class="gsap-fade-up text-white font-black leading-tight mb-6"
-        style="font-size: clamp(2.2rem, 6vw, 5rem); text-shadow: 0 2px 20px rgba(0,0,0,0.4);">
+        style="font-size: clamp(2.2rem, 6vw, 5rem); text-shadow: 0 2px 20px rgba(0,0,0,0.3);">
         زيت زيتون طبيعي<br />
         <span class="text-gradient-gold">100% من قلب سيناء</span>
       </h1>
 
       <!-- Sub-headline -->
-      <p ref="subEl" class="gsap-fade-up text-white/80 text-lg md:text-2xl mb-10 max-w-2xl leading-relaxed font-medium">
+      <p ref="subEl" class="gsap-fade-up text-white/85 text-lg md:text-2xl mb-10 max-w-2xl leading-relaxed font-medium">
         بكر ممتاز معصور علي البارد · حموضة أقل من 0.8% · حصاد يدوي بأيدي مزارعينا
       </p>
 
@@ -49,14 +50,14 @@
           🛒 اطلب الآن — التوصيل لحد بابك
         </a>
         <a href="#benefits" @click.prevent="scrollTo('benefits')"
-          class="inline-flex items-center gap-2 text-white border border-white/30 hover:border-white/60 backdrop-blur-sm bg-white/10 font-bold px-8 py-4 rounded-full transition-all duration-300 hover:bg-white/20 w-full sm:w-auto justify-center">
+          class="inline-flex items-center gap-2 text-white border border-white/30 hover:border-white/55 backdrop-blur-sm bg-white/10 font-bold px-8 py-4 rounded-full transition-all duration-300 hover:bg-white/18 w-full sm:w-auto justify-center">
           اعرف أكتر ↓
         </a>
       </div>
 
       <!-- Urgency -->
       <div ref="urgencyEl" class="gsap-fade-up mt-6">
-        <p class="inline-flex items-center gap-2 text-white/90 text-sm font-bold bg-red-600/70 backdrop-blur-sm px-5 py-2 rounded-full border border-red-500/40 shadow-lg">
+        <p class="inline-flex items-center gap-2 text-white/90 text-sm font-bold bg-red-600/65 backdrop-blur-sm px-5 py-2 rounded-full border border-red-500/35 shadow-lg">
           <span class="animate-pulse">⚡</span> الكمية محدودة جداً — لا تفوت الفرصة
         </p>
       </div>
@@ -64,18 +65,18 @@
 
     <!-- Scroll Indicator -->
     <div ref="scrollIndicator" class="gsap-fade-in absolute bottom-8 left-1/2 -translate-x-1/2 z-20 flex flex-col items-center gap-2">
-      <span class="text-white/50 text-xs font-medium tracking-widest uppercase">اسكرول للأسفل</span>
-      <div class="w-6 h-10 border-2 border-white/30 rounded-full flex items-start justify-center pt-1.5">
+      <span class="text-white/45 text-xs font-medium tracking-widest uppercase">اسكرول للأسفل</span>
+      <div class="w-6 h-10 border-2 border-white/25 rounded-full flex items-start justify-center pt-1.5">
         <div class="w-1.5 h-2.5 bg-[#C9A84C] rounded-full scroll-dot"></div>
       </div>
     </div>
 
-    <!-- Social proof overlay (bottom-left) -->
+    <!-- Social proof overlay -->
     <div ref="socialProofEl" class="gsap-fade-up absolute bottom-24 right-4 z-20 hidden md:block">
-      <div class="bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl p-4 shadow-xl max-w-[220px]">
+      <div class="bg-white/12 backdrop-blur-md border border-white/20 rounded-2xl p-4 shadow-xl max-w-[220px]">
         <div class="flex items-center gap-2 mb-2">
           <div class="flex -space-x-2 space-x-reverse">
-            <div v-for="i in 3" :key="i" class="w-7 h-7 rounded-full bg-gradient-to-br from-[#C9A84C] to-[#2D5016] border-2 border-white flex items-center justify-center text-xs font-bold text-white">
+            <div v-for="i in 3" :key="i" class="w-7 h-7 rounded-full bg-gradient-to-br from-[#C9A84C] to-[#3D7A1E] border-2 border-white flex items-center justify-center text-xs font-bold text-white">
               {{ ['أ','م','س'][i-1] }}
             </div>
           </div>

@@ -1,8 +1,6 @@
 <template>
-  <div style="background:#0d1509; min-height:100vh; color:#eef5e8;">
-    <!-- Noise texture -->
-    <div class="noise-overlay"></div>
-    <!-- Floating olive layer -->
+  <div style="background:#FFFFFF; min-height:100vh; color:#0F1A0A;">
+    <!-- Floating olive layer (very subtle on white) -->
     <FloatingOlives />
 
     <Navbar />

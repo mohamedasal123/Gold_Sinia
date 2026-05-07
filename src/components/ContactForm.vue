@@ -1,10 +1,8 @@
 <template>
-  <section id="order" class="section-pad relative overflow-hidden" style="background: linear-gradient(180deg, #1a2614 0%, #0d1509 100%);">
-    <div style="position:absolute;top:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,#C9A84C,transparent);"></div>
-    <div style="position:absolute;top:-100px;left:50%;transform:translateX(-50%);width:600px;height:400px;border-radius:50%;background:radial-gradient(ellipse,rgba(201,168,76,0.06) 0%,transparent 70%);pointer-events:none;"></div>
+  <section id="order" class="section-pad relative overflow-hidden" style="background: #F8F9FA;">
+    <div style="position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,transparent,#C9A84C,transparent);"></div>
 
     <div class="max-w-2xl mx-auto px-4 sm:px-6 relative z-10">
-
       <div class="text-center mb-12 form-header gsap-fade-up">
         <span class="section-tag">📦 اطلب الآن</span>
         <h2 class="section-title mt-3 mb-3">احجز طلبك الآن</h2>
@@ -19,7 +17,7 @@
             </svg>
             اطلب عبر واتساب الآن
           </a>
-          <div style="color:#567048;font-size:0.8rem;font-weight:600;">أو</div>
+          <div style="color:#9AAD92;font-size:0.8rem;font-weight:600;">أو</div>
           <a href="mailto:mohamediibrahim785@gmail.com?subject=طلب زيت سينا جولد"
             class="btn-olive-outline text-sm px-5 py-2.5 w-full sm:w-auto justify-center">
             📧 التواصل بالإيميل
@@ -27,23 +25,22 @@
         </div>
 
         <div class="mt-4 inline-flex items-center gap-2 px-4 py-1.5 rounded-full"
-          style="background:rgba(16,185,129,0.08);border:1px solid rgba(16,185,129,0.2);">
+          style="background:rgba(16,185,129,0.06);border:1px solid rgba(16,185,129,0.18);">
           <span class="w-2 h-2 bg-green-500 rounded-full" style="animation:pulse 1.5s infinite;"></span>
-          <span style="color:#34d399;font-size:0.8rem;font-weight:700;">الدفع عند الاستلام 100%</span>
+          <span style="color:#059669;font-size:0.8rem;font-weight:700;">الدفع عند الاستلام 100%</span>
         </div>
       </div>
 
       <div class="flex items-center gap-4 mb-8">
-        <div class="flex-grow h-px" style="background:rgba(74,125,37,0.2);"></div>
-        <span style="color:#567048;font-size:0.8rem;font-weight:600;">أو أرسل طلبك بالنموذج</span>
-        <div class="flex-grow h-px" style="background:rgba(74,125,37,0.2);"></div>
+        <div class="flex-grow h-px" style="background:rgba(0,0,0,0.08);"></div>
+        <span style="color:#9AAD92;font-size:0.8rem;font-weight:600;">أو أرسل طلبك بالنموذج</span>
+        <div class="flex-grow h-px" style="background:rgba(0,0,0,0.08);"></div>
       </div>
 
-      <div class="form-card gsap-scale-in glass-card p-8 md:p-10 relative overflow-hidden">
-        <div style="position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,#C9A84C,#2D5016);"></div>
+      <div class="form-card gsap-scale-in white-card p-8 md:p-10 relative overflow-hidden">
+        <div style="position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,#C9A84C,#3D7A1E);"></div>
 
         <form @submit.prevent="submitForm" ref="formEl" class="space-y-5" novalidate>
-
           <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
             <div>
               <label class="form-lbl">الاسم الكامل *</label>
@@ -77,7 +74,7 @@
                 class="product-opt rounded-xl p-3 text-center cursor-pointer transition-all duration-200"
                 :class="form.product === opt.value ? 'opt-active' : 'opt-idle'">
                 <div style="font-size:1.4rem;margin-bottom:4px;">{{ opt.icon }}</div>
-                <div style="font-size:0.75rem;font-weight:700;color:#eef5e8;line-height:1.2;">{{ opt.label }}</div>
+                <div style="font-size:0.75rem;font-weight:700;color:#0F1A0A;line-height:1.2;">{{ opt.label }}</div>
                 <div style="font-size:0.72rem;font-weight:800;color:#C9A84C;margin-top:3px;">{{ opt.price }} ج</div>
               </div>
             </div>
@@ -102,19 +99,19 @@
             <span>{{ isSubmitting ? 'جاري الإرسال...' : '✅ تأكيد الطلب ' }}</span>
           </button>
 
-          <p style="text-align:center;font-size:0.75rem;color:#567048;">
+          <p style="text-align:center;font-size:0.75rem;color:#9AAD92;">
             🔒 بياناتك آمنة — لن نشاركها مع أي جهة
           </p>
         </form>
 
         <Transition name="fade-overlay">
           <div v-if="showSuccess"
-            style="position:absolute;inset:0;background:rgba(13,21,9,0.97);backdrop-filter:blur(8px);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:2rem;border-radius:1.25rem;z-index:20;">
-            <div class="success-check" style="width:80px;height:80px;background:linear-gradient(135deg,#1a7a42,#25D366);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:2.5rem;color:#fff;box-shadow:0 0 40px rgba(37,211,102,0.4);margin-bottom:1.5rem;">
+            style="position:absolute;inset:0;background:rgba(255,255,255,0.97);backdrop-filter:blur(8px);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:2rem;border-radius:1.25rem;z-index:20;">
+            <div class="success-check" style="width:80px;height:80px;background:linear-gradient(135deg,#1a7a42,#25D366);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:2.5rem;color:#fff;box-shadow:0 0 40px rgba(37,211,102,0.25);margin-bottom:1.5rem;">
               ✓
             </div>
-            <h3 style="font-size:1.6rem;font-weight:900;color:#eef5e8;margin-bottom:0.5rem;">تم استلام طلبك! 🎉</h3>
-            <p style="color:#8aab78;font-size:1rem;margin-bottom:0.5rem;">هنتواصل معاك خلال ساعات لتأكيد الشحن.</p>
+            <h3 style="font-size:1.6rem;font-weight:900;color:#0F1A0A;margin-bottom:0.5rem;">تم استلام طلبك! 🎉</h3>
+            <p style="color:#6B7E64;font-size:1rem;margin-bottom:0.5rem;">هنتواصل معاك خلال ساعات لتأكيد الشحن.</p>
             <p style="color:#C9A84C;font-weight:700;font-size:0.9rem;">التوصيل لحد بابك خلال 48 ساعة 🚚</p>
             <button @click="resetForm" class="btn-gold mt-8 px-8 py-3 rounded-full">تقديم طلب آخر</button>
           </div>
@@ -122,12 +119,11 @@
       </div>
 
       <div class="mt-8 grid grid-cols-3 gap-4 form-trust gsap-fade-up">
-        <div v-for="t in trustBadges" :key="t.label" class="glass-card p-4 flex flex-col items-center text-center gap-2">
+        <div v-for="t in trustBadges" :key="t.label" class="white-card p-4 flex flex-col items-center text-center gap-2">
           <div style="font-size:1.5rem;">{{ t.icon }}</div>
-          <p style="font-size:0.72rem;font-weight:700;color:#567048;line-height:1.3;">{{ t.label }}</p>
+          <p style="font-size:0.72rem;font-weight:700;color:#6B7E64;line-height:1.3;">{{ t.label }}</p>
         </div>
       </div>
-
     </div>
   </section>
 </template>
@@ -194,13 +190,13 @@ onMounted(() => {
 </script>
 
 <style scoped>
-.form-lbl { display:block; font-size:0.82rem; font-weight:700; color:#6a8f5a; margin-bottom:0.35rem; }
-.err-msg  { color:#f87171; font-size:0.76rem; font-weight:600; margin-top:0.25rem; }
-.error-input { border-color: rgba(248,113,113,0.5) !important; }
+.form-lbl { display:block; font-size:0.82rem; font-weight:700; color:#6B7E64; margin-bottom:0.35rem; }
+.err-msg  { color:#dc2626; font-size:0.76rem; font-weight:600; margin-top:0.25rem; }
+.error-input { border-color: rgba(220,38,38,0.5) !important; }
 
-.opt-idle   { background: rgba(13,21,9,0.5); border: 1.5px solid rgba(74,125,37,0.2); }
-.opt-idle:hover { border-color: rgba(201,168,76,0.35); }
-.opt-active { background: rgba(201,168,76,0.1); border: 1.5px solid rgba(201,168,76,0.45); box-shadow: 0 0 15px rgba(201,168,76,0.12); }
+.opt-idle   { background: #F8F9FA; border: 1.5px solid rgba(0,0,0,0.10); }
+.opt-idle:hover { border-color: rgba(201,168,76,0.35); background: #FFFFFF; }
+.opt-active { background: rgba(201,168,76,0.07); border: 1.5px solid rgba(201,168,76,0.45); box-shadow: 0 0 15px rgba(201,168,76,0.10); }
 
 .fade-overlay-enter-active, .fade-overlay-leave-active { transition: opacity 0.4s ease; }
 .fade-overlay-enter-from, .fade-overlay-leave-to { opacity: 0; }

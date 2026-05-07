@@ -1,21 +1,20 @@
 <template>
-  <footer style="background: linear-gradient(180deg,#0d1509 0%,#070e05 100%); position:relative; overflow:hidden; padding-top:5rem; padding-bottom:2rem;">
-    <div style="position:absolute;top:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,#C9A84C,transparent);"></div>
-    <div style="position:absolute;inset:0;opacity:0.018;pointer-events:none;background-image:radial-gradient(circle at 2px 2px,#C9A84C 1px,transparent 0);background-size:28px 28px;"></div>
+  <footer style="background: #F2F4F6; border-top: 1px solid rgba(0,0,0,0.08); position:relative; overflow:hidden; padding-top:5rem; padding-bottom:2rem;">
+    <div style="position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,transparent,rgba(201,168,76,0.5),transparent);"></div>
 
     <div class="max-w-6xl mx-auto px-4 sm:px-6 relative z-10">
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-12 pb-16" style="border-bottom:1px solid rgba(74,125,37,0.12);">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-12 pb-16" style="border-bottom:1px solid rgba(0,0,0,0.08);">
 
         <!-- Brand -->
         <div>
           <div class="flex items-center gap-3 mb-5">
-            <div style="width:48px;height:48px;border-radius:50%;background:linear-gradient(135deg,#C9A84C,#a88935);display:flex;align-items:center;justify-content:center;color:#fff;font-size:1.1rem;font-weight:900;box-shadow:0 0 20px rgba(201,168,76,0.35);">سG</div>
+            <div style="width:48px;height:48px;border-radius:50%;background:linear-gradient(135deg,#C9A84C,#a88935);display:flex;align-items:center;justify-content:center;color:#fff;font-size:1.1rem;font-weight:900;box-shadow:0 4px 14px rgba(201,168,76,0.25);">سG</div>
             <div>
-              <h2 style="font-size:1.4rem;font-weight:900;color:#eef5e8;line-height:1.2;">سينا جولد</h2>
-              <p style="font-size:0.7rem;color:#5a9e32;font-weight:600;">Sina Gold Olive Oil</p>
+              <h2 style="font-size:1.4rem;font-weight:900;color:#0F1A0A;line-height:1.2;">سينا جولد</h2>
+              <p style="font-size:0.7rem;color:#3D7A1E;font-weight:600;">Sina Gold Olive Oil</p>
             </div>
           </div>
-          <p style="color:#567048;font-size:0.88rem;line-height:1.75;font-weight:500;margin-bottom:1.5rem;">
+          <p style="color:#6B7E64;font-size:0.88rem;line-height:1.75;font-weight:500;margin-bottom:1.5rem;">
             زيت زيتون طبيعي 100% من مزارع سيناء الأصيلة. معصور بكرة على البارد بأيدي مزارعينا لصحة أفضل لك ولعائلتك.
           </p>
           <a href="https://wa.me/201551866195" target="_blank" rel="noopener"
@@ -29,13 +28,13 @@
 
         <!-- Nav -->
         <div>
-          <h3 style="font-weight:700;color:#eef5e8;margin-bottom:1.25rem;font-size:0.95rem;">التنقل السريع</h3>
+          <h3 style="font-weight:700;color:#0F1A0A;margin-bottom:1.25rem;font-size:0.95rem;">التنقل السريع</h3>
           <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:0.65rem;">
             <li v-for="l in links" :key="l.id">
               <a :href="'#'+l.id" @click.prevent="go(l.id)"
-                style="color:#567048;font-size:0.88rem;font-weight:500;text-decoration:none;display:flex;align-items:center;gap:0.4rem;transition:color 0.2s;"
+                style="color:#6B7E64;font-size:0.88rem;font-weight:500;text-decoration:none;display:flex;align-items:center;gap:0.4rem;transition:color 0.2s;"
                 class="hover:text-[#C9A84C]">
-                <span style="color:rgba(201,168,76,0.4);">›</span> {{ l.label }}
+                <span style="color:rgba(201,168,76,0.5);">›</span> {{ l.label }}
               </a>
             </li>
           </ul>
@@ -43,37 +42,37 @@
 
         <!-- Contact -->
         <div>
-          <h3 style="font-weight:700;color:#eef5e8;margin-bottom:1.25rem;font-size:0.95rem;">تواصل معنا</h3>
+          <h3 style="font-weight:700;color:#0F1A0A;margin-bottom:1.25rem;font-size:0.95rem;">تواصل معنا</h3>
           <div style="display:flex;flex-direction:column;gap:0.9rem;">
             <a href="https://wa.me/201551866195" target="_blank"
-              style="color:#567048;font-size:0.88rem;font-weight:500;text-decoration:none;display:flex;align-items:center;gap:0.6rem;transition:color 0.2s;"
+              style="color:#6B7E64;font-size:0.88rem;font-weight:500;text-decoration:none;display:flex;align-items:center;gap:0.6rem;transition:color 0.2s;"
               class="hover:text-[#25D366]">
               <span style="font-size:1.1rem;">📱</span> 01551866195
             </a>
             <a href="mailto:mohamediibrahim785@gmail.com"
-              style="color:#567048;font-size:0.88rem;font-weight:500;text-decoration:none;display:flex;align-items:center;gap:0.6rem;transition:color 0.2s;"
+              style="color:#6B7E64;font-size:0.88rem;font-weight:500;text-decoration:none;display:flex;align-items:center;gap:0.6rem;transition:color 0.2s;"
               class="hover:text-[#C9A84C]">
               <span style="font-size:1.1rem;">📧</span> mohamediibrahim785@gmail.com
             </a>
-            <p style="color:#567048;font-size:0.88rem;font-weight:500;display:flex;align-items:flex-start;gap:0.6rem;">
+            <p style="color:#6B7E64;font-size:0.88rem;font-weight:500;display:flex;align-items:flex-start;gap:0.6rem;">
               <span style="font-size:1.1rem;flex-shrink:0;">📍</span> مزارع شبه جزيرة سيناء، مصر
             </p>
-            <p style="color:#567048;font-size:0.88rem;font-weight:500;display:flex;align-items:flex-start;gap:0.6rem;">
+            <p style="color:#6B7E64;font-size:0.88rem;font-weight:500;display:flex;align-items:flex-start;gap:0.6rem;">
               <span style="font-size:1.1rem;flex-shrink:0;">🕒</span> توصيل خلال 48 ساعة لكل المحافظات
             </p>
           </div>
 
-          <div class="mt-5 p-4 glass-card" style="border-radius:1rem;">
+          <div class="mt-5 p-4 white-card" style="border-radius:1rem;">
             <p style="color:#C9A84C;font-weight:700;font-size:0.82rem;margin-bottom:3px;">⚡ الكمية محدودة</p>
-            <p style="color:#567048;font-size:0.76rem;">اطلب الآن لضمان حصتك من أفضل موسم زيتون</p>
+            <p style="color:#9AAD92;font-size:0.76rem;">اطلب الآن لضمان حصتك من أفضل موسم زيتون</p>
           </div>
         </div>
       </div>
 
       <!-- Bottom -->
       <div class="flex flex-col sm:flex-row items-center justify-between gap-3 pt-6"
-        style="font-size:0.76rem;color:#3a5030;">
-        <p>&copy; {{ new Date().getFullYear() }} سينا جولد. جميع الحقوق محفوظة.</p>
+        style="font-size:0.76rem;color:#9AAD92;">
+        <p>© {{ new Date().getFullYear() }} سينا جولد. جميع الحقوق محفوظة.</p>
         <p style="display:flex;align-items:center;gap:0.4rem;">صُنع بـ <span style="color:#ef4444;">❤️</span> في مصر</p>
       </div>
     </div>
@@ -87,7 +86,6 @@ const links = [
   { id:'benefits', label:'الفوائد الصحية' },
   { id:'why-us',   label:'قصتنا' },
   { id:'products', label:'المنتجات' },
-  // { id:'reviews',  label:'آراء العملاء' },
   { id:'order',    label:'اطلب الآن' },
 ];
 </script>

@@ -1,7 +1,8 @@
 <template>
-  <div style="background: linear-gradient(90deg, #0d1509, #1a2614, #1f2f18, #1a2614, #0d1509); position: relative; overflow: hidden;">
-    <!-- shimmer line -->
-    <div style="position:absolute;top:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,#C9A84C,transparent);"></div>
+  <!-- Trust Bar — clean white surface strip -->
+  <div style="background: #FFFFFF; border-top: 1px solid rgba(0,0,0,0.07); border-bottom: 1px solid rgba(0,0,0,0.07); position: relative; overflow: hidden;">
+    <!-- top shimmer line -->
+    <div style="position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,transparent,rgba(201,168,76,0.5),transparent);"></div>
 
     <div class="max-w-6xl mx-auto px-4 py-5 sm:py-7">
       <div class="flex flex-wrap items-center justify-center gap-6 md:gap-12 lg:gap-16">
@@ -11,18 +12,16 @@
           class="trust-item gsap-fade-up flex items-center gap-3 group cursor-default"
         >
           <div class="w-10 h-10 rounded-full flex items-center justify-center text-xl flex-shrink-0 transition-all duration-300 group-hover:scale-110"
-            style="background: rgba(201,168,76,0.12); border: 1px solid rgba(201,168,76,0.25);">
+            style="background: rgba(201,168,76,0.09); border: 1px solid rgba(201,168,76,0.22);">
             {{ item.icon }}
           </div>
           <div>
-            <p style="color:#eef5e8; font-weight:700; font-size:0.9rem; line-height:1.2;">{{ item.label }}</p>
-            <p style="color:#567048; font-size:0.72rem; line-height:1.2;" class="hidden sm:block">{{ item.sub }}</p>
+            <p style="color:#0F1A0A; font-weight:700; font-size:0.9rem; line-height:1.2;">{{ item.label }}</p>
+            <p style="color:#9AAD92; font-size:0.72rem; line-height:1.2;" class="hidden sm:block">{{ item.sub }}</p>
           </div>
         </div>
       </div>
     </div>
-
-    <div style="position:absolute;bottom:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,rgba(74,125,37,0.3),transparent);"></div>
   </div>
 </template>
 
