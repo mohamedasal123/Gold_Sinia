@@ -8,8 +8,8 @@
       <HeroSection />
       <TrustBar />
       <BenefitsSection />
-      <WhySinaGold />
       <ProductShowcase />
+      <WhySinaGold />
       <!-- <TestimonialsSection /> -->
       <ContactForm />
       <FooterSection />

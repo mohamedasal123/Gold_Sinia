@@ -115,11 +115,11 @@
               معصور بكرة على البارد · حموضة أقل من 0.8% · من مزارع سيناء
             </p>
 
-            <ul class="space-y-1.5 mb-5 flex-grow">
+            <!-- <ul class="space-y-1.5 mb-5 flex-grow">
               <li v-for="f in features[0]" :key="f" style="font-size:0.8rem;color:#1a2614;font-weight:700;display:flex;align-items:center;gap:0.5rem;">
                 <span style="color:#ffffff;background:#1a2614;border-radius:50%;width:16px;height:16px;display:flex;align-items:center;justify-content:center;font-size:0.6rem;flex-shrink:0;">✓</span>{{ f }}
               </li>
-            </ul>
+            </ul> -->
 
             <div class="mb-5 p-4 rounded-xl" style="background:rgba(255,255,255,0.4);border:1px solid rgba(255,255,255,0.7);">
               <div style="font-size:0.7rem;color:#3e4f35;font-weight:800;margin-bottom:4px;letter-spacing:0.05em;">السعر بعد خصم اليوم</div>
@@ -179,11 +179,11 @@
               معصور بكرة على البارد · حموضة أقل من 0.8% · يكفي العيلة شهر كامل
             </p>
 
-            <ul class="space-y-2 mb-5 flex-grow">
+            <!-- <ul class="space-y-2 mb-5 flex-grow">
               <li v-for="f in features[1]" :key="f" style="font-size:0.82rem;color:#1a2614;font-weight:700;display:flex;align-items:center;gap:0.5rem;">
                 <span style="color:#ffffff;background:#1a2614;border-radius:50%;width:18px;height:18px;display:flex;align-items:center;justify-content:center;font-size:0.65rem;flex-shrink:0;">✓</span>{{ f }}
               </li>
-            </ul>
+            </ul> -->
 
             <div class="mb-5 p-4 rounded-xl" style="background:rgba(255,255,255,0.5);border:1px solid rgba(255,255,255,0.8);">
               <div style="font-size:0.7rem;color:#3e4f35;font-weight:800;margin-bottom:4px;letter-spacing:0.05em;">السعر بعد خصم اليوم</div>
@@ -242,11 +242,11 @@
               معصور بكرة على البارد · هدية مثالية أو للعيلة الكبيرة
             </p>
 
-            <ul class="space-y-1.5 mb-5 flex-grow">
+            <!-- <ul class="space-y-1.5 mb-5 flex-grow">
               <li v-for="f in features[2]" :key="f" style="font-size:0.8rem;color:#1a2614;font-weight:700;display:flex;align-items:center;gap:0.5rem;">
                 <span style="color:#ffffff;background:#1a2614;border-radius:50%;width:16px;height:16px;display:flex;align-items:center;justify-content:center;font-size:0.6rem;flex-shrink:0;">✓</span>{{ f }}
               </li>
-            </ul>
+            </ul> -->
 
             <div class="mb-5 p-4 rounded-xl" style="background:rgba(255,255,255,0.4);border:1px solid rgba(255,255,255,0.7);">
               <div style="font-size:0.7rem;color:#3e4f35;font-weight:800;margin-bottom:4px;letter-spacing:0.05em;">السعر بعد خصم اليوم</div>

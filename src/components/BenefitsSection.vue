@@ -5,7 +5,7 @@
       <!-- Header -->
       <div class="text-center mb-16 benefits-header gsap-fade-up">
         <span class="section-tag">💡 الفوائد الصحية</span>
-        <h2 class="section-title mt-3 mb-3">ليه زيت سينا جولد؟</h2>
+        <h2 class="section-title mt-3 mb-3">ليه زيت جولد سيناء؟</h2>
         <div class="gold-divider"></div>
         <p class="section-subtitle mx-auto mt-5">
           زيت زيتون سيناء مش بس طعام — هو استثمار في صحتك وصحة عيلتك
