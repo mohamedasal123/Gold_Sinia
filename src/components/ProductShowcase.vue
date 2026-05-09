@@ -54,7 +54,7 @@
             </div>
             <div style="height:1px;background:linear-gradient(90deg,transparent,rgba(214,181,92,0.3),transparent);margin-bottom:1.1rem;"></div>
             <div style="text-align:center;margin-bottom:0.7rem;">
-              <p style="font-size:0.78rem;color:#d6b55c;font-weight:600;letter-spacing:0.08em;margin-bottom:0.75rem;">
+              <p style="font-size:1.5rem;font-weight:600;color:#d6b55c;font-weight:600;letter-spacing:0.08em;margin-bottom:0.75rem;">
                 ⏳ العرض ينتهي بعد
               </p>
               <div style="display:flex;align-items:center;justify-content:center;gap:0.6rem;flex-wrap:wrap;">
@@ -127,7 +127,7 @@
                 <span style="font-size:2.4rem;font-weight:900;color:#1a2614;line-height:1;">300</span>
                 <div style="padding-bottom:5px;">
                   <div style="font-size:0.95rem;color:#1a2614;font-weight:800;line-height:1;">جنيه</div>
-                  <div style="font-size:0.78rem;text-decoration:line-through;color:#5a6e4e;line-height:1.4;">320</div>
+                  <div style="font-size:1.5rem;font-weight:600;text-decoration:line-through;color:#b9321e;line-height:1.4;">320</div>
                 </div>
               </div>
               <div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:10px;">
@@ -191,7 +191,7 @@
                 <span style="font-size:2.8rem;font-weight:900;color:#1a2614;line-height:1;">580</span>
                 <div style="padding-bottom:6px;">
                   <div style="font-size:1rem;color:#1a2614;font-weight:800;line-height:1;">جنيه</div>
-                  <div style="font-size:0.8rem;text-decoration:line-through;color:#5a6e4e;line-height:1.4;">640</div>
+                  <div style="font-size:0.8rem;text-decoration:line-through;color:#b9321e;line-height:1.4;">640</div>
                 </div>
               </div>
               <div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:10px;">
@@ -254,7 +254,7 @@
                 <span style="font-size:2.4rem;font-weight:900;color:#1a2614;line-height:1;">1700</span>
                 <div style="padding-bottom:5px;">
                   <div style="font-size:0.95rem;color:#1a2614;font-weight:800;line-height:1;">جنيه</div>
-                  <div style="font-size:0.78rem;text-decoration:line-through;color:#5a6e4e;line-height:1.4;">1920</div>
+                  <div style="font-size:1.5rem;font-weight:600;font-weight:600;text-decoration:line-through;color:#b9321e;line-height:1.4;">1920</div>
                 </div>
               </div>
               <div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:10px;">
